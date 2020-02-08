@@ -4,6 +4,7 @@ import { Box, Image, Button, ResponsiveContext } from 'grommet';
 import blueFilling from '../../assets/images/fill.png'
 import orangeFilling from '../../assets/images/fill_2.png'
 import outline from '../../assets/images/siluette.png'
+import { screenCapture } from '../helpers/ScreenCapture';
 
 
 const siluetteStyle = {
@@ -45,6 +46,10 @@ class Builder extends Component {
     }
   }
 
+  onExportClick(dataUrl) {
+    console.log(dataUrl)
+  }
+
   render() {
     const filling = this.state.filling
     if (!filling) {
@@ -62,6 +67,7 @@ class Builder extends Component {
         </Box>
         <Box background='brand'>
           <Button onClick={() => this.changeColor()}>Change</Button>
+          <Button onClick={() => screenCapture((dateUrl) => this.onExportClick(dateUrl))}>Export</Button>
           {size}
         </Box>
       </Box>

@@ -68,7 +68,7 @@ class Builder extends Component {
       },
       {
         selected: false,
-        location: 'Linke Vorderpfote',
+        location: 'Linke Vorderpfote ',
         src: spotImages.leftFrontFoot
       },
       {
@@ -78,7 +78,7 @@ class Builder extends Component {
       },
       {
         selected: false,
-        location: 'Rechte Vorderpfote',
+        location: 'Rechte Hinterpfote',
         src: spotImages.rightFrontFoot
       },
       {
@@ -138,7 +138,7 @@ class Builder extends Component {
     }
     {/* <Button onClick={() => screenCapture(this.imageBox, (dateUrl) => this.onExportClick(dateUrl))}>Export</Button> */ }
     return (
-      <Pane className='container'>
+      <Pane >
         <Pane background='yellowTint' style={{ position: 'sticky', top: 20, zIndex: 99 }}>
           <Pane style={{ position: 'relative' }} display='flex' alignItems='center' justifyContent='center'>
             <FillingColor fill={this.state.mainColor} style={imageStyleSmall} />
@@ -158,7 +158,7 @@ class Builder extends Component {
           </Pane>
           <Pane>
             <Pane>
-            <CirclePicker onChangeComplete={c => this.setState({ mainColor: c.hex })} /> 
+              <CirclePicker onChangeComplete={c => this.setState({ mainColor: c.hex })} />
               {/* <Positioner
               isShown={this.state.showColorPicker}
               > 

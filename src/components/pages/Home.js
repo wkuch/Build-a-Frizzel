@@ -31,15 +31,17 @@ class Home extends Component {
 
   render() {
     return (
-        <ThemeProvider theme={defaultTheme}>
-      <Pane background='yellowTint' >
-        <Pane background='yellowTint' style={{position: 'sticky', top: 0}} >
-        <Heading >
-          Heading
-        </Heading>
+      <ThemeProvider theme={defaultTheme}>
+        <Pane background='yellowTint' >
+          <Pane className='col-sm-11 col-md-8 col-lg-6 container' background='yellowTint' >
+            <Pane style={{ position: 'sticky', top: 0 }} >
+              <Heading >
+                Heading
+              </Heading>
+            </Pane>
+            <Builder theme={defaultTheme} />
+          </Pane>
         </Pane>
-        <Builder theme={defaultTheme} />
-      </Pane>
       </ThemeProvider>
     );
   }

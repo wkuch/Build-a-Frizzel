@@ -14,7 +14,7 @@ export const DropdownSelection = (props) => (
           title={props.label}
           hasFilter={false}
           hasTitle={false}
-          height={75}
+          height={100}
           position={Position.BOTTOM}
           onSelect={item => props.onSelect(item)}
         >

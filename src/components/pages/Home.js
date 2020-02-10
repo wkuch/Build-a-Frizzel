@@ -1,24 +1,8 @@
 import React, { Component } from 'react';
-import { Pane, Dialog, defaultTheme, Heading, Paragraph } from 'evergreen-ui'
+import { Pane, defaultTheme, Heading, Paragraph } from 'evergreen-ui'
 import Builder from '../molecules/Builder';
 import { ThemeProvider } from 'styled-components';
 import logo from '../../assets/images/logo.png'
-
-const theme = {
-  global: {
-    colors: {
-      brand: '#6793c8',
-      selected: '#FD6FFF'
-    },
-    font: {
-      family: 'Roboto',
-      size: '18px',
-      height: '20px',
-    },
-  },
-};
-
-
 
 export class Home extends Component {
   constructor(props) {
@@ -54,7 +38,7 @@ export class Home extends Component {
           <Pane background='yellowTint' >
             <div id='header' style={{ backgroundColor: '#82cfff' }}>
               <Pane display='flex' alignItems='center' paddingTop={8} paddingBottom={8} >
-                <img className='col-sm-2 col-md-1' src={logo} />
+                <img className='col-sm-2 col-md-1' alt='FrizzelBlizzel Logo' src={logo} />
                 <Heading >
                   Frizzel Blizzel
                 </Heading>
@@ -80,7 +64,7 @@ export class Home extends Component {
             </Pane>
             </div>
             <Pane display='flex' alignItems='center' flexDirection='column' width='100%' background='yellowTint' >
-              <Builder header={this.headerRef} theme={defaultTheme} />
+              <Builder theme={defaultTheme} />
             </Pane>
           </Pane>
         </div>

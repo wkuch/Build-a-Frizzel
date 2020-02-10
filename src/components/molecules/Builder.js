@@ -1,27 +1,19 @@
-import React, { Component, useState } from 'react';
+import React, { Component,  } from 'react';
 import { LoadingIndicator } from '../atoms/LoadingIndicator';
-import { Pane, Text, Button, Heading, SelectMenu, Label, Checkbox, Positioner, Dialog } from 'evergreen-ui'
-import { SliderPicker, SketchPicker, CirclePicker, TwitterPicker } from 'react-color'
+import { Pane, Heading, Checkbox} from 'evergreen-ui'
+import {CirclePicker } from 'react-color'
 import outline from '../../assets/images/siluette.png'
 import background from '../../assets/images/background.png'
-import { screenCapture } from '../helpers/ScreenCapture';
 import { spotImages } from '../../assets/images/spots'
 import { DropdownSelection } from '../atoms/DropdownSelection';
 import { cloneDeep } from "lodash"
 import { FillingColor } from '../atoms/FillingColor';
 
 
-const siluetteStyle = {
-  width: '40%',
-  position: 'relative'
-}
+
 const siluetteStyleSmall = {
   width: '80%',
   position: 'relative'
-}
-const imageStyle = {
-  width: '40%',
-  position: 'absolute'
 }
 const imageStyleSmall = {
   width: '80%',
@@ -32,7 +24,8 @@ const imageStyleSmall = {
 class Builder extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
+    this.imageBox = React.createRef()
     this.state = {
       showColorPicker: false,
       size: undefined,
@@ -115,6 +108,10 @@ class Builder extends Component {
       {
         label: 'Hellgelb',
         value: 'sand'
+      },
+      {
+        label: 'Grau',
+        value: 'grey'
       }
     ]
     this.setState({ firstSpots: spots, secondSpots, spotColorOptions })
@@ -124,17 +121,18 @@ class Builder extends Component {
     console.log(dataUrl)
   }
 
-  renderSpotSelection(spot, spotNumber) {
+  renderSpotSelection(spot, spotNumber, i) {
     return (
       <Checkbox
+        key= {i}
         label={spot.location}
         checked={spot.selected}
         onChange={() => {
           this.setState(state => {
             if (spotNumber === 0) {
-              state.firstSpots[state.firstSpots.indexOf(spot)].selected = !spot.selected
+              state.firstSpots[i].selected = !spot.selected
             } else {
-              state.secondSpots[state.secondSpots.indexOf(spot)].selected = !spot.selected
+              state.secondSpots[i].selected = !spot.selected
             }
             return state
           })
@@ -143,37 +141,31 @@ class Builder extends Component {
     )
   }
 
-  renderSpot(spot, color) {
+  renderSpot(spot, color, i) {
     return (
-      <img style={imageStyleSmall} src={spot.src[color]} />
+      <img key={i} style={imageStyleSmall} alt={'Spot'+spot.location} src={spot.src[color]} />
     )
   }
 
   render() {
-    console.log(this.props.theme.colors)
-    const colors = this.props.theme.colors
     if (!this.state.firstSpots) {
       return (
         <LoadingIndicator />
       )
     }
-    {/* <Button onClick={() => screenCapture(this.imageBox, (dateUrl) => this.onExportClick(dateUrl))}>Export</Button> */ }
     return (
-      <Pane className='col-sm-11 col-md-6 col-lg-4' >
-        <Pane elevation={2} paddingBottom={16} display='flex' alignItems='center' flexDirection='column' justifyContent='center' background='yellowTint' width='100%' style={{ position: 'sticky', top: 0, zIndex: 99 }}>
+      <Pane id='imageBox' className='col-sm-11 col-md-6 col-lg-4' >
+        <Pane  elevation={2} paddingBottom={16} display='flex' alignItems='center' flexDirection='column' justifyContent='center' background='yellowTint' width='100%' style={{ position: 'sticky', top: 0, zIndex: 99 }}>
           <Heading marginTop={8} height={32}>Gestalte dein Frizzel Monster</Heading>
-          <Pane id='innerImage' style={{ position: 'relative' }} display='flex' alignItems='center' justifyContent='center'>
+          <Pane   style={{ position: 'relative' }} display='flex' alignItems='center' justifyContent='center'>
             <FillingColor fill={this.state.mainColor} style={imageStyleSmall} />
             {/* <img src={} style={imageStyleSmall} /> */}
-            <img src={background} style={imageStyleSmall} />
-            {this.state.firstSpots.filter(spot => spot.selected).map(spot => this.renderSpot(spot, this.state.firstSpotColor))}
-            {this.state.secondSpots.filter(spot => spot.selected).map(spot => this.renderSpot(spot, this.state.secondSpotColor))}
-            <img src={outline} style={siluetteStyleSmall} />
+            <img ref={ this.imageBox } alt='background color' src={background} style={imageStyleSmall} />
+            {this.state.firstSpots.filter(spot => spot.selected).map((spot, i) => this.renderSpot(spot, this.state.firstSpotColor, i))}
+            {this.state.secondSpots.filter(spot => spot.selected).map((spot, i) => this.renderSpot(spot, this.state.secondSpotColor, i))}
+            <img src={outline} alt='outline' style={siluetteStyleSmall} />
           </Pane>
         </Pane>
-        <Heading marginTop={16} size={600}>
-          Farben
-        </Heading>
         <Pane display="flex" padding={8} borderRadius={3}>
           <Pane flex={1} alignItems="center" display="flex">
             <Heading>Hauptfarbe</Heading>
@@ -204,11 +196,14 @@ class Builder extends Component {
         <Heading size={600}>
           Flecken 1
         </Heading>
-        {this.state.firstSpots.map(spot => this.renderSpotSelection(spot, 0))}
+        {this.state.firstSpots.map((spot, i) => this.renderSpotSelection(spot, 0, i))}
         <Heading size={600}>
           Flecken 2
         </Heading>
-        {this.state.secondSpots.map(spot => this.renderSpotSelection(spot, 1))}
+        {this.state.secondSpots.map((spot, i) => this.renderSpotSelection(spot, 1, i))}
+        {/* <Button onClick={() => screenCapture('innerImage', (dateUrl) => this.onExportClick(dateUrl))}>
+          Save
+        </Button> */}
       </Pane>
     )
   }

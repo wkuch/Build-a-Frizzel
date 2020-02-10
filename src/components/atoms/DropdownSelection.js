@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pane, Button, Heading, SelectMenu } from 'evergreen-ui'
+import { Pane, Button, Heading, SelectMenu, Position } from 'evergreen-ui'
 
 
 export const DropdownSelection = (props) => (
@@ -10,10 +10,13 @@ export const DropdownSelection = (props) => (
     <Pane>
       <Pane>
         <SelectMenu
+        {...props}
           title={props.label}
-          options={props.options}
-          selected={props.selected}
-          onSelect={item => props.onSelect(item.value)}
+          hasFilter={false}
+          hasTitle={false}
+          height={75}
+          position={Position.BOTTOM}
+          onSelect={item => props.onSelect(item)}
         >
           <Button>{(props.useSelectedAsButtonText && props.selected) || props.fallbackButtonText}</Button>
         </SelectMenu>

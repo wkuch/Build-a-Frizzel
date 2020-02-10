@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import { LoadingIndicator } from '../atoms/LoadingIndicator';
-import { Pane, Text, Button, Heading, SelectMenu, Label, Checkbox, Positioner } from 'evergreen-ui'
+import { Pane, Text, Button, Heading, SelectMenu, Label, Checkbox, Positioner, Dialog } from 'evergreen-ui'
 import { SliderPicker, SketchPicker, CirclePicker, TwitterPicker } from 'react-color'
 import outline from '../../assets/images/siluette.png'
 import background from '../../assets/images/background.png'
@@ -36,11 +36,14 @@ class Builder extends Component {
     this.state = {
       showColorPicker: false,
       size: undefined,
-      mainColor: '#4f668a',
+      mainColor: '#03A9F4',
       firstSpotColor: 'sand',
       secondSpotColor: 'darkBlue',
       firstSpots: undefined,
-      secondSpots: undefined
+      secondSpots: undefined,
+      showWelcomeMessage: true,
+      headerHeight: undefined,
+      spotColorOptions: undefined
     }
   }
 
@@ -68,13 +71,13 @@ class Builder extends Component {
       },
       {
         selected: false,
-        location: 'Linke Vorderpfote ',
-        src: spotImages.leftFrontFoot
+        location: 'Rechtes Ohr',
+        src: spotImages.rightEar
       },
       {
         selected: false,
-        location: 'Rechtes Ohr',
-        src: spotImages.rightEar
+        location: 'Linke Vorderpfote ',
+        src: spotImages.leftFrontFoot
       },
       {
         selected: false,
@@ -92,11 +95,29 @@ class Builder extends Component {
         src: spotImages.tail
       }
     ]
-    this.setState({ firstSpots: spots, secondSpots: cloneDeep(spots) })
-  }
 
-  changeColor() {
+    let secondSpots = cloneDeep(spots)
 
+    //Default selection of spots
+    spots[0].selected = true
+    spots[1].selected = true
+    spots[2].selected = true
+    secondSpots[8].selected = true
+    secondSpots[3].selected = true
+    secondSpots[4].selected = true
+    secondSpots[6].selected = true
+
+    const spotColorOptions = [
+      {
+        label: 'Dunkelblau',
+        value: 'darkBlue'
+      },
+      {
+        label: 'Hellgelb',
+        value: 'sand'
+      }
+    ]
+    this.setState({ firstSpots: spots, secondSpots, spotColorOptions })
   }
 
   onExportClick(dataUrl) {
@@ -108,7 +129,7 @@ class Builder extends Component {
       <Checkbox
         label={spot.location}
         checked={spot.selected}
-        onChange={e => {
+        onChange={() => {
           this.setState(state => {
             if (spotNumber === 0) {
               state.firstSpots[state.firstSpots.indexOf(spot)].selected = !spot.selected
@@ -138,9 +159,9 @@ class Builder extends Component {
     }
     {/* <Button onClick={() => screenCapture(this.imageBox, (dateUrl) => this.onExportClick(dateUrl))}>Export</Button> */ }
     return (
-      <Pane className='col-sm-12 col-md-6 col-lg-4' >
-        <Pane elevation={1} display='flex' alignItems='center' flexDirection='column' justifyContent='center' background='yellowTint' width='100%'  style={{ position: 'sticky', top: 0, zIndex: 99 }}>
-          <Heading height={32}>Dein Frizzel Monster</Heading>
+      <Pane className='col-sm-11 col-md-6 col-lg-4' >
+        <Pane elevation={2} paddingBottom={16} display='flex' alignItems='center' flexDirection='column' justifyContent='center' background='yellowTint' width='100%' style={{ position: 'sticky', top: 0, zIndex: 99 }}>
+          <Heading marginTop={8} height={32}>Gestalte dein Frizzel Monster</Heading>
           <Pane id='innerImage' style={{ position: 'relative' }} display='flex' alignItems='center' justifyContent='center'>
             <FillingColor fill={this.state.mainColor} style={imageStyleSmall} />
             {/* <img src={} style={imageStyleSmall} /> */}
@@ -149,9 +170,8 @@ class Builder extends Component {
             {this.state.secondSpots.filter(spot => spot.selected).map(spot => this.renderSpot(spot, this.state.secondSpotColor))}
             <img src={outline} style={siluetteStyleSmall} />
           </Pane>
-          <Heading elevation={2} margin={8} height={32} size={16}>Einstellungen</Heading>
         </Pane>
-        <Heading size={600}>
+        <Heading marginTop={16} size={600}>
           Farben
         </Heading>
         <Pane display="flex" padding={8} borderRadius={3}>
@@ -159,33 +179,27 @@ class Builder extends Component {
             <Heading>Hauptfarbe</Heading>
           </Pane>
           <Pane margin={4}>
-          <div className='col-sm-12'>  
-              <CirclePicker width='100%' style={{marginRight: '0'}} color={this.state.mainColor}  onChangeComplete={c => this.setState({ mainColor: c.hex })} />
-          </div>
+            <div className='col-sm-12'>
+              <CirclePicker width='100%' style={{ marginRight: '0' }} color={this.state.mainColor} onChangeComplete={c => this.setState({ mainColor: c.hex })} />
+            </div>
           </Pane>
         </Pane>
 
         <DropdownSelection
           label='Fleckenfarbe 1'
-          options={
-            ['rot', 'rosa', 'hellblau', 'dunkelblau', 'hellgrün']
-              .map(label => ({ label, value: label }))
-          }
+          options={this.state.spotColorOptions}
           selected={this.state.firstSpotColor}
-          useSelectedAsButtonText
+          useSelectedAsButtonText = {false}
           fallbackButtonText='Auswahl ...'
-          onSelect={selected => this.setState({ firstSpotColor: selected })}
+          onSelect={newSelection => this.setState({firstSpotColor: newSelection.value})}
         />
         <DropdownSelection
           label='Fleckenfarbe 2'
-          options={
-            ['rot', 'rosa', 'hellblau', 'dunkelblau', 'hellgrün']
-              .map(label => ({ label, value: label }))
-          }
+          options={this.state.spotColorOptions}
           selected={this.state.secondSpotColor}
-          useSelectedAsButtonText
+          useSelectedAsButtonText = {false}
           fallbackButtonText='Auswahl ...'
-          onSelect={selected => this.setState({ secondSpotColor: selected })}
+          onSelect={newSelection => this.setState({secondSpotColor: newSelection.value})}
         />
         <Heading size={600}>
           Flecken 1

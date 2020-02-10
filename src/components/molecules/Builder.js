@@ -58,6 +58,11 @@ class Builder extends Component {
       },
       {
         selected: false,
+        location: 'Auge',
+        src: spotImages.eye
+      },
+      {
+        selected: false,
         location: 'Linkes Ohr',
         src: spotImages.leftEar
       },
@@ -134,8 +139,8 @@ class Builder extends Component {
     {/* <Button onClick={() => screenCapture(this.imageBox, (dateUrl) => this.onExportClick(dateUrl))}>Export</Button> */ }
     return (
       <Pane className='container'>
-        <Pane background='orangeTint' style={{ position: 'sticky', top: 0, zIndex: 99 }}>
-          <Pane style={{ position: 'relative' }} display='flex' direction='column' alignItems='center' justifyContent='center'>
+        <Pane background='yellowTint' style={{ position: 'sticky', top: 20, zIndex: 99 }}>
+          <Pane style={{ position: 'relative' }} display='flex' alignItems='center' justifyContent='center'>
             <FillingColor fill={this.state.mainColor} style={imageStyleSmall} />
             {/* <img src={} style={imageStyleSmall} /> */}
             <img src={background} style={imageStyleSmall} />
@@ -147,13 +152,12 @@ class Builder extends Component {
         <Heading size={600}>
           Farben
         </Heading>
-        <Pane display="flex" padding={8} background="tint2" borderRadius={3}>
+        <Pane display="flex" padding={8} borderRadius={3}>
           <Pane flex={1} alignItems="center" display="flex">
             <Heading>Hauptfarbe</Heading>
           </Pane>
           <Pane>
             <Pane>
-              <Button>Farbauswahl</Button>
             <CirclePicker onChangeComplete={c => this.setState({ mainColor: c.hex })} /> 
               {/* <Positioner
               isShown={this.state.showColorPicker}

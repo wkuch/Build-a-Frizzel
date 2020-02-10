@@ -32,10 +32,12 @@ class Home extends Component {
   render() {
     return (
         <ThemeProvider theme={defaultTheme}>
-      <Pane>
-        <Heading style={{position: 'sticky', top: 0}}>
+      <Pane background='yellowTint' >
+        <Pane background='yellowTint' style={{position: 'sticky', top: 0}} >
+        <Heading >
           Heading
         </Heading>
+        </Pane>
         <Builder theme={defaultTheme} />
       </Pane>
       </ThemeProvider>

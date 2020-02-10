@@ -3,7 +3,7 @@ import { Pane, Button, Heading, SelectMenu } from 'evergreen-ui'
 
 
 export const DropdownSelection = (props) => (
-  <Pane display="flex" padding={8} background="tint2" borderRadius={3}>
+  <Pane display="flex" padding={8} borderRadius={3}>
     <Pane flex={1} alignItems="center" display="flex">
       <Heading>{props.label}</Heading>
     </Pane>

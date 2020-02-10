@@ -32,16 +32,14 @@ class Home extends Component {
   render() {
     return (
       <ThemeProvider theme={defaultTheme}>
+        <div className='container col-12'>
         <Pane background='yellowTint' >
-          <Pane className='col-sm-11 col-md-8 col-lg-6 container' background='yellowTint' >
-            <Pane style={{ position: 'sticky', top: 0 }} >
-              <Heading >
-                Heading
-              </Heading>
-            </Pane>
+          <Pane display='flex' alignItems='center' flexDirection='column' width='100%' background='yellowTint' >
+
             <Builder theme={defaultTheme} />
           </Pane>
         </Pane>
+        </div>
       </ThemeProvider>
     );
   }

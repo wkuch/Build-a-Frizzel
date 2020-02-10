@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react';
 import { LoadingIndicator } from '../atoms/LoadingIndicator';
 import { Pane, Text, Button, Heading, SelectMenu, Label, Checkbox, Positioner } from 'evergreen-ui'
-import { CirclePicker } from 'react-color'
+import { SliderPicker, SketchPicker, CirclePicker, TwitterPicker } from 'react-color'
 import outline from '../../assets/images/siluette.png'
 import background from '../../assets/images/background.png'
 import { screenCapture } from '../helpers/ScreenCapture';
@@ -138,9 +138,10 @@ class Builder extends Component {
     }
     {/* <Button onClick={() => screenCapture(this.imageBox, (dateUrl) => this.onExportClick(dateUrl))}>Export</Button> */ }
     return (
-      <Pane >
-        <Pane background='yellowTint' style={{ position: 'sticky', top: 20, zIndex: 99 }}>
-          <Pane style={{ position: 'relative' }} display='flex' alignItems='center' justifyContent='center'>
+      <Pane className='col-sm-12 col-md-6 col-lg-4' >
+        <Pane elevation={1} display='flex' alignItems='center' flexDirection='column' justifyContent='center' background='yellowTint' width='100%'  style={{ position: 'sticky', top: 0, zIndex: 99 }}>
+          <Heading height={32}>Dein Frizzel Monster</Heading>
+          <Pane id='innerImage' style={{ position: 'relative' }} display='flex' alignItems='center' justifyContent='center'>
             <FillingColor fill={this.state.mainColor} style={imageStyleSmall} />
             {/* <img src={} style={imageStyleSmall} /> */}
             <img src={background} style={imageStyleSmall} />
@@ -148,6 +149,7 @@ class Builder extends Component {
             {this.state.secondSpots.filter(spot => spot.selected).map(spot => this.renderSpot(spot, this.state.secondSpotColor))}
             <img src={outline} style={siluetteStyleSmall} />
           </Pane>
+          <Heading elevation={2} margin={8} height={32} size={16}>Einstellungen</Heading>
         </Pane>
         <Heading size={600}>
           Farben
@@ -156,15 +158,10 @@ class Builder extends Component {
           <Pane flex={1} alignItems="center" display="flex">
             <Heading>Hauptfarbe</Heading>
           </Pane>
-          <Pane>
-            <Pane>
-              <CirclePicker onChangeComplete={c => this.setState({ mainColor: c.hex })} />
-              {/* <Positioner
-              isShown={this.state.showColorPicker}
-              > 
-              {/* </Positioner> */}
-
-            </Pane>
+          <Pane margin={4}>
+          <div className='col-sm-12'>  
+              <CirclePicker width='100%' style={{marginRight: '0'}} color={this.state.mainColor}  onChangeComplete={c => this.setState({ mainColor: c.hex })} />
+          </div>
           </Pane>
         </Pane>
 

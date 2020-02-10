@@ -1,6 +1,6 @@
 {
   "name": "build-a-frizzel",
-  "homepage": "frizzelblizzel.de/BuildAFrizzel",
+  "homepage": "http://www.frizzelblizzel.de",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

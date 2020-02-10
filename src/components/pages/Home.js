@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Button, Heading, Grommet, Box, dark, Image, Header, ResponsiveContext, Footer } from 'grommet'
-import { Notification } from 'grommet-icons'
+import { Pane, Heading } from 'evergreen-ui'
 import Builder from '../molecules/Builder';
 
 
 const theme = {
   global: {
     colors: {
-      brand: '#6793c8'
+      brand: '#6793c8',
+      selected: '#FD6FFF'
     },
     font: {
       family: 'Roboto',
@@ -29,17 +29,13 @@ class Home extends Component {
 
 
   render() {
-    const showSidebar = this.state.showSidebar
     return (
-      <Grommet theme={theme} full >   
-            <Box>
-              <Header background='brand'>
-                <Heading level='3' margin='none'>My App</Heading>
-                <Button icon={<Notification />} onClick={() => { this.setState({ showSidebar: !showSidebar }) }} />
-              </Header>
-              <Builder />            
-            </Box>
-      </Grommet >
+      <Pane>
+        <Heading>
+          Heading
+        </Heading>
+        <Builder />
+      </Pane>
     );
   }
 }

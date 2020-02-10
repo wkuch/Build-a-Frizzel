@@ -1,13 +1,17 @@
 import html2canvas from 'html2canvas';
 
-export const screenCapture = (handleScreenshot) => {
-  const body = document.querySelector('body')
-
+export const screenCapture = (toCaptureElement, handleScreenshot) => {
+  // const body = document.querySelector('body')
+    const body = toCaptureElement
     html2canvas(body).then(canvas => { 
       let croppedCanvas = document.createElement('canvas')
       let croppedCanvasContext = croppedCanvas.getContext('2d')
-      const height = 400
-      const width = 400
+      const height = toCaptureElement.getBoundingClientRect().height
+      const width = toCaptureElement.getBoundingClientRect().width
+      console.log(toCaptureElement)
+      console.log(toCaptureElement.getBoundingClientRect())
+      console.log(toCaptureElement.getBoundingClientRect().width)
+      console.log(toCaptureElement.getBoundingClientRect().height)
 
       croppedCanvas.width = width;
       croppedCanvas.height = height;

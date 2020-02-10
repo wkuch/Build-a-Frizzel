@@ -20,7 +20,7 @@ const theme = {
 
 
 
-class Home extends Component {
+export class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,4 +45,3 @@ class Home extends Component {
   }
 }
 
-export default Home;

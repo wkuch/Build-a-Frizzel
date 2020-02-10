@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/BuildAFrizzel/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/BuildAFrizzel/static/js/main.a04740e8.chunk.js",
-    "main.js.map": "/BuildAFrizzel/static/js/main.a04740e8.chunk.js.map",
+    "main.js": "/BuildAFrizzel/static/js/main.c64055b7.chunk.js",
+    "main.js.map": "/BuildAFrizzel/static/js/main.c64055b7.chunk.js.map",
     "runtime-main.js": "/BuildAFrizzel/static/js/runtime-main.1c94a447.js",
     "runtime-main.js.map": "/BuildAFrizzel/static/js/runtime-main.1c94a447.js.map",
     "static/js/2.baa94947.chunk.js": "/BuildAFrizzel/static/js/2.baa94947.chunk.js",
     "static/js/2.baa94947.chunk.js.map": "/BuildAFrizzel/static/js/2.baa94947.chunk.js.map",
     "index.html": "/BuildAFrizzel/index.html",
-    "precache-manifest.cfac95a8c66a8b2f8d725a3ecea99294.js": "/BuildAFrizzel/precache-manifest.cfac95a8c66a8b2f8d725a3ecea99294.js",
+    "precache-manifest.aed6784f2559bbc21f692c0ef752bad9.js": "/BuildAFrizzel/precache-manifest.aed6784f2559bbc21f692c0ef752bad9.js",
     "service-worker.js": "/BuildAFrizzel/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/BuildAFrizzel/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.baa94947.chunk.js.LICENSE.txt": "/BuildAFrizzel/static/js/2.baa94947.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.1c94a447.js",
     "static/js/2.baa94947.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.a04740e8.chunk.js"
+    "static/js/main.c64055b7.chunk.js"
   ]
 }

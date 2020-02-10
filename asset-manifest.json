@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "frizzelblizzel.de/BuildAFrizzel/static/css/main.69eda509.chunk.css",
-    "main.js": "frizzelblizzel.de/BuildAFrizzel/static/js/main.e2ddd481.chunk.js",
-    "main.js.map": "frizzelblizzel.de/BuildAFrizzel/static/js/main.e2ddd481.chunk.js.map",
-    "runtime-main.js": "frizzelblizzel.de/BuildAFrizzel/static/js/runtime-main.83d96e29.js",
-    "runtime-main.js.map": "frizzelblizzel.de/BuildAFrizzel/static/js/runtime-main.83d96e29.js.map",
-    "static/js/2.29c05ef9.chunk.js": "frizzelblizzel.de/BuildAFrizzel/static/js/2.29c05ef9.chunk.js",
-    "static/js/2.29c05ef9.chunk.js.map": "frizzelblizzel.de/BuildAFrizzel/static/js/2.29c05ef9.chunk.js.map",
-    "index.html": "frizzelblizzel.de/BuildAFrizzel/index.html",
-    "precache-manifest.dabd84d50bc9f98031993cf00aeacf26.js": "frizzelblizzel.de/BuildAFrizzel/precache-manifest.dabd84d50bc9f98031993cf00aeacf26.js",
-    "service-worker.js": "frizzelblizzel.de/BuildAFrizzel/service-worker.js",
-    "static/css/main.69eda509.chunk.css.map": "frizzelblizzel.de/BuildAFrizzel/static/css/main.69eda509.chunk.css.map",
-    "static/js/2.29c05ef9.chunk.js.LICENSE.txt": "frizzelblizzel.de/BuildAFrizzel/static/js/2.29c05ef9.chunk.js.LICENSE.txt",
-    "static/media/Basic_square.69843d14.svg": "frizzelblizzel.de/BuildAFrizzel/static/media/Basic_square.69843d14.svg",
-    "static/media/background.png": "frizzelblizzel.de/BuildAFrizzel/static/media/background.2002845e.png",
-    "static/media/darkBlue.png": "frizzelblizzel.de/BuildAFrizzel/static/media/darkBlue.bc673b94.png",
-    "static/media/sand.png": "frizzelblizzel.de/BuildAFrizzel/static/media/sand.b802a5d1.png",
-    "static/media/siluette.png": "frizzelblizzel.de/BuildAFrizzel/static/media/siluette.1e7eaf66.png"
+    "main.css": "/static/css/main.69eda509.chunk.css",
+    "main.js": "/static/js/main.db7bc24c.chunk.js",
+    "main.js.map": "/static/js/main.db7bc24c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f6341f3b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f6341f3b.js.map",
+    "static/js/2.6f2e019c.chunk.js": "/static/js/2.6f2e019c.chunk.js",
+    "static/js/2.6f2e019c.chunk.js.map": "/static/js/2.6f2e019c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b35e21bf2736046ba565da09e801d984.js": "/precache-manifest.b35e21bf2736046ba565da09e801d984.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.69eda509.chunk.css.map": "/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.6f2e019c.chunk.js.LICENSE.txt": "/static/js/2.6f2e019c.chunk.js.LICENSE.txt",
+    "static/media/Basic_square.69843d14.svg": "/static/media/Basic_square.69843d14.svg",
+    "static/media/background.png": "/static/media/background.2002845e.png",
+    "static/media/darkBlue.png": "/static/media/darkBlue.bc673b94.png",
+    "static/media/sand.png": "/static/media/sand.b802a5d1.png",
+    "static/media/siluette.png": "/static/media/siluette.1e7eaf66.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.83d96e29.js",
-    "static/js/2.29c05ef9.chunk.js",
+    "static/js/runtime-main.f6341f3b.js",
+    "static/js/2.6f2e019c.chunk.js",
     "static/css/main.69eda509.chunk.css",
-    "static/js/main.e2ddd481.chunk.js"
+    "static/js/main.db7bc24c.chunk.js"
   ]
 }

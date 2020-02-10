@@ -1,25 +1,27 @@
 {
   "files": {
     "main.css": "/BuildAFrizzel/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/BuildAFrizzel/static/js/main.7f5e3d88.chunk.js",
-    "main.js.map": "/BuildAFrizzel/static/js/main.7f5e3d88.chunk.js.map",
+    "main.js": "/BuildAFrizzel/static/js/main.96e857c8.chunk.js",
+    "main.js.map": "/BuildAFrizzel/static/js/main.96e857c8.chunk.js.map",
     "runtime-main.js": "/BuildAFrizzel/static/js/runtime-main.1c94a447.js",
     "runtime-main.js.map": "/BuildAFrizzel/static/js/runtime-main.1c94a447.js.map",
-    "static/js/2.c84b7ea8.chunk.js": "/BuildAFrizzel/static/js/2.c84b7ea8.chunk.js",
-    "static/js/2.c84b7ea8.chunk.js.map": "/BuildAFrizzel/static/js/2.c84b7ea8.chunk.js.map",
+    "static/js/2.baa94947.chunk.js": "/BuildAFrizzel/static/js/2.baa94947.chunk.js",
+    "static/js/2.baa94947.chunk.js.map": "/BuildAFrizzel/static/js/2.baa94947.chunk.js.map",
     "index.html": "/BuildAFrizzel/index.html",
-    "precache-manifest.81449aa9c3693d3d92537b94f807e23e.js": "/BuildAFrizzel/precache-manifest.81449aa9c3693d3d92537b94f807e23e.js",
+    "precache-manifest.994fc406cb02c940c84b8e101f69e4bd.js": "/BuildAFrizzel/precache-manifest.994fc406cb02c940c84b8e101f69e4bd.js",
     "service-worker.js": "/BuildAFrizzel/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/BuildAFrizzel/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.c84b7ea8.chunk.js.LICENSE.txt": "/BuildAFrizzel/static/js/2.c84b7ea8.chunk.js.LICENSE.txt",
-    "static/media/fill.png": "/BuildAFrizzel/static/media/fill.da223547.png",
-    "static/media/fill_2.png": "/BuildAFrizzel/static/media/fill_2.0abe6435.png",
-    "static/media/siluette.png": "/BuildAFrizzel/static/media/siluette.ce29c02a.png"
+    "static/js/2.baa94947.chunk.js.LICENSE.txt": "/BuildAFrizzel/static/js/2.baa94947.chunk.js.LICENSE.txt",
+    "static/media/Basic_square.9f5eab6d.svg": "/BuildAFrizzel/static/media/Basic_square.9f5eab6d.svg",
+    "static/media/background.png": "/BuildAFrizzel/static/media/background.2002845e.png",
+    "static/media/darkBlue.png": "/BuildAFrizzel/static/media/darkBlue.bc673b94.png",
+    "static/media/sand.png": "/BuildAFrizzel/static/media/sand.b802a5d1.png",
+    "static/media/siluette.png": "/BuildAFrizzel/static/media/siluette.1e7eaf66.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1c94a447.js",
-    "static/js/2.c84b7ea8.chunk.js",
+    "static/js/2.baa94947.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.7f5e3d88.chunk.js"
+    "static/js/main.96e857c8.chunk.js"
   ]
 }

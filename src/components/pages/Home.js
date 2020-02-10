@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Pane, Heading } from 'evergreen-ui'
+import { Pane, Heading, defaultTheme } from 'evergreen-ui'
 import Builder from '../molecules/Builder';
+import { ThemeProvider } from 'styled-components';
 
 
 const theme = {
@@ -30,12 +31,14 @@ class Home extends Component {
 
   render() {
     return (
+        <ThemeProvider theme={defaultTheme}>
       <Pane>
-        <Heading>
+        <Heading style={{position: 'sticky', top: 0}}>
           Heading
         </Heading>
-        <Builder />
+        <Builder theme={defaultTheme} />
       </Pane>
+      </ThemeProvider>
     );
   }
 }

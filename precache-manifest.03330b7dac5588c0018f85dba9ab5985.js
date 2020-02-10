@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89d2adf6b132aa3801cd878e5887ba2b",
+    "revision": "2cae30d8123b041126c2de38486be9bc",
     "url": "/index.html"
   },
   {
-    "revision": "15e3e181cf548d6b5351",
+    "revision": "348b593151b57da5fd10",
     "url": "/static/css/main.69eda509.chunk.css"
   },
   {
-    "revision": "14d50507eacfecc22650",
-    "url": "/static/js/2.9b2ae380.chunk.js"
+    "revision": "a094a9bccffc3fc9a676",
+    "url": "/static/js/2.7c566000.chunk.js"
   },
   {
-    "revision": "8812000c900139b6b42416cc45c5f337",
-    "url": "/static/js/2.9b2ae380.chunk.js.LICENSE.txt"
+    "revision": "46f63f8626516ab37e48a023f0c6fcd4",
+    "url": "/static/js/2.7c566000.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "15e3e181cf548d6b5351",
-    "url": "/static/js/main.ef3170f4.chunk.js"
+    "revision": "348b593151b57da5fd10",
+    "url": "/static/js/main.a8d744e4.chunk.js"
   },
   {
     "revision": "c943e210ea701e06bb35",
@@ -66,6 +66,42 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bc673b942c1e41a986404add5a69fb34",
     "url": "/static/media/darkBlue.bc673b94.png"
+  },
+  {
+    "revision": "225d21f3080889029dd9a1de42ee450c",
+    "url": "/static/media/grey.225d21f3.png"
+  },
+  {
+    "revision": "77a96ba4855f6fb69d4e1ec60ddc638d",
+    "url": "/static/media/grey.77a96ba4.png"
+  },
+  {
+    "revision": "99ddcfc42e4691dd2f9dd7fb8068eafa",
+    "url": "/static/media/grey.99ddcfc4.png"
+  },
+  {
+    "revision": "a0ff679821ad8c7a98d23e0d8d75bc18",
+    "url": "/static/media/grey.a0ff6798.png"
+  },
+  {
+    "revision": "a6a50027ba27938d4a0f14af65a8e39c",
+    "url": "/static/media/grey.a6a50027.png"
+  },
+  {
+    "revision": "d52ce24d0387ab5b6606e6720657b179",
+    "url": "/static/media/grey.d52ce24d.png"
+  },
+  {
+    "revision": "d9692fbe2b706799290dd0a22af41551",
+    "url": "/static/media/grey.d9692fbe.png"
+  },
+  {
+    "revision": "e4c652939202e79fc758da52034c3c25",
+    "url": "/static/media/grey.e4c65293.png"
+  },
+  {
+    "revision": "ea44824c57c2650079e0d2f71d1850e0",
+    "url": "/static/media/grey.ea44824c.png"
   },
   {
     "revision": "fe27a211891c71ae0e67ebf37357a40e",

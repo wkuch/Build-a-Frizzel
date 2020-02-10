@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Build-a-Frizzel/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/Build-a-Frizzel/static/js/main.58cf3c47.chunk.js",
+    "main.js.map": "/Build-a-Frizzel/static/js/main.58cf3c47.chunk.js.map",
+    "runtime-main.js": "/Build-a-Frizzel/static/js/runtime-main.c9e21bf2.js",
+    "runtime-main.js.map": "/Build-a-Frizzel/static/js/runtime-main.c9e21bf2.js.map",
+    "static/js/2.c84b7ea8.chunk.js": "/Build-a-Frizzel/static/js/2.c84b7ea8.chunk.js",
+    "static/js/2.c84b7ea8.chunk.js.map": "/Build-a-Frizzel/static/js/2.c84b7ea8.chunk.js.map",
+    "index.html": "/Build-a-Frizzel/index.html",
+    "precache-manifest.ad4c7487ca8f97029aa3e62b9fe9c33f.js": "/Build-a-Frizzel/precache-manifest.ad4c7487ca8f97029aa3e62b9fe9c33f.js",
+    "service-worker.js": "/Build-a-Frizzel/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/Build-a-Frizzel/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.c84b7ea8.chunk.js.LICENSE.txt": "/Build-a-Frizzel/static/js/2.c84b7ea8.chunk.js.LICENSE.txt",
+    "static/media/fill.png": "/Build-a-Frizzel/static/media/fill.da223547.png",
+    "static/media/fill_2.png": "/Build-a-Frizzel/static/media/fill_2.0abe6435.png",
+    "static/media/siluette.png": "/Build-a-Frizzel/static/media/siluette.ce29c02a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9e21bf2.js",
+    "static/js/2.c84b7ea8.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.58cf3c47.chunk.js"
+  ]
+}

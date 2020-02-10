@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "14a557e5cc2901a9995cce271408b1c8",
+    "revision": "3c14bd949bd1ce440bc4b7f3ee9737d4",
     "url": "/BuildAFrizzel/index.html"
   },
   {
-    "revision": "142af87faf967dc8fa1b",
+    "revision": "be9bb03c6c02445cca82",
     "url": "/BuildAFrizzel/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BuildAFrizzel/static/js/2.baa94947.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "142af87faf967dc8fa1b",
-    "url": "/BuildAFrizzel/static/js/main.96e857c8.chunk.js"
+    "revision": "be9bb03c6c02445cca82",
+    "url": "/BuildAFrizzel/static/js/main.a04740e8.chunk.js"
   },
   {
     "revision": "45c27c251a87d380419f",

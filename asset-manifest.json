@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Build-a-Frizzel/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/Build-a-Frizzel/static/js/main.58cf3c47.chunk.js",
-    "main.js.map": "/Build-a-Frizzel/static/js/main.58cf3c47.chunk.js.map",
-    "runtime-main.js": "/Build-a-Frizzel/static/js/runtime-main.c9e21bf2.js",
-    "runtime-main.js.map": "/Build-a-Frizzel/static/js/runtime-main.c9e21bf2.js.map",
-    "static/js/2.c84b7ea8.chunk.js": "/Build-a-Frizzel/static/js/2.c84b7ea8.chunk.js",
-    "static/js/2.c84b7ea8.chunk.js.map": "/Build-a-Frizzel/static/js/2.c84b7ea8.chunk.js.map",
-    "index.html": "/Build-a-Frizzel/index.html",
-    "precache-manifest.ad4c7487ca8f97029aa3e62b9fe9c33f.js": "/Build-a-Frizzel/precache-manifest.ad4c7487ca8f97029aa3e62b9fe9c33f.js",
-    "service-worker.js": "/Build-a-Frizzel/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/Build-a-Frizzel/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.c84b7ea8.chunk.js.LICENSE.txt": "/Build-a-Frizzel/static/js/2.c84b7ea8.chunk.js.LICENSE.txt",
-    "static/media/fill.png": "/Build-a-Frizzel/static/media/fill.da223547.png",
-    "static/media/fill_2.png": "/Build-a-Frizzel/static/media/fill_2.0abe6435.png",
-    "static/media/siluette.png": "/Build-a-Frizzel/static/media/siluette.ce29c02a.png"
+    "main.css": "/BuildAFrizzel/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/BuildAFrizzel/static/js/main.7f5e3d88.chunk.js",
+    "main.js.map": "/BuildAFrizzel/static/js/main.7f5e3d88.chunk.js.map",
+    "runtime-main.js": "/BuildAFrizzel/static/js/runtime-main.1c94a447.js",
+    "runtime-main.js.map": "/BuildAFrizzel/static/js/runtime-main.1c94a447.js.map",
+    "static/js/2.c84b7ea8.chunk.js": "/BuildAFrizzel/static/js/2.c84b7ea8.chunk.js",
+    "static/js/2.c84b7ea8.chunk.js.map": "/BuildAFrizzel/static/js/2.c84b7ea8.chunk.js.map",
+    "index.html": "/BuildAFrizzel/index.html",
+    "precache-manifest.81449aa9c3693d3d92537b94f807e23e.js": "/BuildAFrizzel/precache-manifest.81449aa9c3693d3d92537b94f807e23e.js",
+    "service-worker.js": "/BuildAFrizzel/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/BuildAFrizzel/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.c84b7ea8.chunk.js.LICENSE.txt": "/BuildAFrizzel/static/js/2.c84b7ea8.chunk.js.LICENSE.txt",
+    "static/media/fill.png": "/BuildAFrizzel/static/media/fill.da223547.png",
+    "static/media/fill_2.png": "/BuildAFrizzel/static/media/fill_2.0abe6435.png",
+    "static/media/siluette.png": "/BuildAFrizzel/static/media/siluette.ce29c02a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c9e21bf2.js",
+    "static/js/runtime-main.1c94a447.js",
     "static/js/2.c84b7ea8.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.58cf3c47.chunk.js"
+    "static/js/main.7f5e3d88.chunk.js"
   ]
 }

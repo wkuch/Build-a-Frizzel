@@ -45,7 +45,7 @@ export class Home extends Component {
               </Pane>
             </div>
             <div className='container col-sm-12 col-md-8 col-lg-4'>
-            <Pane>
+            {/* <Pane>
               <Heading margin={8}>
                 {welcomeMessage.heading}
               </Heading>
@@ -61,7 +61,7 @@ export class Home extends Component {
               <Paragraph marginBottom={8} style={{textAlign: 'justify'}}>
                 {welcomeMessage.forthParagraph}
               </Paragraph>
-            </Pane>
+            </Pane> */}
             </div>
             <Pane display='flex' alignItems='center' flexDirection='column' width='100%' background='yellowTint' >
               <Builder theme={defaultTheme} />

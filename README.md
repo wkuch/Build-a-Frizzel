@@ -7,4 +7,5 @@ To test it run
 `yarn start` to run locally
 
 Then you can customize this Frizzel monster: 
+
 ![customizable monster](https://i.imgur.com/UxFPUT3.png)
